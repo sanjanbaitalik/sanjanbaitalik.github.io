@@ -90,6 +90,17 @@
             color: #fff;
         }
 
+        .sidebar .profile-link {
+            display: contents;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .sidebar .profile-img-link {
+            display: block;
+            cursor: pointer;
+        }
+
         .sidebar .tagline {
             font-size: .85rem;
             color: var(--accent);
@@ -528,8 +539,10 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-        <img src="images/profile.jpg" alt="Sanjan Baitalik">
-        <h1>Sanjan Baitalik</h1>
+        <a href="#about" class="profile-img-link"><img src="images/profile.jpg" alt="Sanjan Baitalik"></a>
+        <a href="#about" class="profile-link">
+            <h1>Sanjan Baitalik</h1>
+        </a>
         <p class="tagline">AI &amp; ML Researcher</p>
         <div class="social-links">
             <a href="mailto:rayan.baitalik@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
