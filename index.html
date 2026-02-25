@@ -189,6 +189,24 @@
             margin-bottom: 1.5rem;
             color: var(--text);
             letter-spacing: -.5px;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+        }
+
+        .section-title .anchor-link {
+            font-family: var(--font-sans);
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--accent);
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+
+        .section-title:hover .anchor-link {
+            opacity: 1;
         }
 
         /* Cards */
@@ -539,7 +557,8 @@
         <!-- About -->
         <section id="about">
             <div class="section-label">About</div>
-            <h2 class="section-title">Hello, I'm Sanjan.</h2>
+            <h2 class="section-title">Hello, I'm Sanjan.<a class="anchor-link" href="#about"
+                    aria-label="Link to About section">#</a></h2>
             <p class="about-text">
                 I am a final-year B.Tech student in Computer Science &amp; Engineering at the
                 <strong>Institute of Engineering &amp; Management, Kolkata</strong> (CGPA 9.33/10, top 15%).
@@ -583,7 +602,8 @@
         <!-- Education -->
         <section id="education">
             <div class="section-label">Education</div>
-            <h2 class="section-title">Academic Background</h2>
+            <h2 class="section-title">Academic Background<a class="anchor-link" href="#education"
+                    aria-label="Link to Education section">#</a></h2>
             <div class="card">
                 <div class="card-header">
                     <div>
@@ -599,7 +619,8 @@
         <!-- Experience -->
         <section id="experience">
             <div class="section-label">Research Experience</div>
-            <h2 class="section-title">Where I've Worked</h2>
+            <h2 class="section-title">Where I've Worked<a class="anchor-link" href="#experience"
+                    aria-label="Link to Research Experience section">#</a></h2>
 
             <div class="card">
                 <div class="card-header">
@@ -704,7 +725,8 @@
         <!-- Publications -->
         <section id="publications">
             <div class="section-label">Publications</div>
-            <h2 class="section-title">Selected Papers</h2>
+            <h2 class="section-title">Selected Papers<a class="anchor-link" href="#publications"
+                    aria-label="Link to Publications section">#</a></h2>
 
             <div class="pub-section-label">Published / Accepted</div>
 
@@ -715,9 +737,12 @@
                             and Deep Learning Framework for Reproductive-Stage Plant Phenotyping</div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Utsho Banerjee, Rajarshi Karmakar,
                             Vincent Stoerger, Himadri Nath Saha, Sruti Das Choudhury</div>
-                        <div class="pub-venue"><a href="https://agriai-workshop.github.io/aaai2026/" target="_blank">AAAI AgriAI Workshop</a>, 2026</div>
-                        <div class="pub-links"><a href="https://openreview.net/pdf?id=4CAJBz13DQ" target="_blank"><i class="fa-solid fa-file-pdf"></i>
-                                PDF</a><a href="https://github.com/sanjanbaitalik/ReproPhenoNet" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+                        <div class="pub-venue"><a href="https://agriai-workshop.github.io/aaai2026/"
+                                target="_blank">AAAI AgriAI Workshop</a>, 2026</div>
+                        <div class="pub-links"><a href="https://openreview.net/pdf?id=4CAJBz13DQ" target="_blank"><i
+                                    class="fa-solid fa-file-pdf"></i>
+                                PDF</a><a href="https://github.com/sanjanbaitalik/ReproPhenoNet" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a></div>
                     </div>
                 </div>
             </div>
@@ -729,9 +754,12 @@
                             Reasoning and Selective Prediction</div>
                         <div class="pub-authors">Rajashik Datta, Sanjan Baitalik, Amit Kumar Das, Sruti Das Choudhury
                         </div>
-                        <div class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge on Logic &amp; AI</a>, 2026</div>
-                        <div class="pub-links"><a href="papers\112_PlantPhenoLM_Phenotype_Gen.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>
-                                PDF</a><a href="https://github.com/rajashikdatta/plantphenolm" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+                        <div class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning"
+                                target="_blank">AAAI Bridge on Logic &amp; AI</a>, 2026</div>
+                        <div class="pub-links"><a href="papers\112_PlantPhenoLM_Phenotype_Gen.pdf" target="_blank"><i
+                                    class="fa-solid fa-file-pdf"></i>
+                                PDF</a><a href="https://github.com/rajashikdatta/plantphenolm" target="_blank"><i
+                                    class="fa-brands fa-github"></i> Code</a></div>
                     </div>
                 </div>
             </div>
@@ -743,9 +771,12 @@
                             Consistency in Multi-Turn LLM Dialogues</div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Amit Kumar Das, Sruti Das Choudhury
                         </div>
-                        <div class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning" target="_blank">AAAI Bridge on Logic &amp; AI</a>, 2026</div>
-                        <div class="pub-links"><a href="papers\113_Conversation_as_Belief_Rev.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>
-                                PDF</a><a href="https://github.com/sanjanbaitalik/llm-logical-consistency" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+                        <div class="pub-venue"><a href="https://sites.google.com/view/aaai-2026-lmreasoning"
+                                target="_blank">AAAI Bridge on Logic &amp; AI</a>, 2026</div>
+                        <div class="pub-links"><a href="papers\113_Conversation_as_Belief_Rev.pdf" target="_blank"><i
+                                    class="fa-solid fa-file-pdf"></i>
+                                PDF</a><a href="https://github.com/sanjanbaitalik/llm-logical-consistency"
+                                target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
                     </div>
                 </div>
             </div>
@@ -757,9 +788,11 @@
                             Selection in Agriculture and Remote Sensing</div>
                         <div class="pub-authors">Rajashik Datta, Sanjan Baitalik, Sruti Das Choudhury, Arup Kumar
                             Chattopadhyay, Amit Kumar Das</div>
-                        <div class="pub-venue"><a href="https://link.springer.com/journal/40815" target="_blank">International Journal of Fuzzy Systems</a>, 2026</div>
-                        <div class="pub-links"><a href="papers\FHFAM.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>
-                                PDF</a></div> 
+                        <div class="pub-venue"><a href="https://link.springer.com/journal/40815"
+                                target="_blank">International Journal of Fuzzy Systems</a>, 2026</div>
+                        <div class="pub-links"><a href="papers\FHFAM.pdf" target="_blank"><i
+                                    class="fa-solid fa-file-pdf"></i>
+                                PDF</a></div>
                     </div>
                 </div>
             </div>
@@ -770,7 +803,8 @@
                         <div class="pub-title">Enhancing Interpretability Through Clustering, Explainable AI, and
                             Narrative Visualization</div>
                         <div class="pub-authors">Sruti Das Choudhury, Rajashik Datta, Sanjan Baitalik</div>
-                        <div class="pub-venue"><a href="https://www.mdpi.com/journal/information" target="_blank">Information</a>, 2025</div>
+                        <div class="pub-venue"><a href="https://www.mdpi.com/journal/information"
+                                target="_blank">Information</a>, 2025</div>
                         <!-- <div class="pub-links"><a href="#" target="_blank"><i class="fa-solid fa-file-pdf"></i>
                                 PDF</a><a href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div> -->
                     </div>
@@ -784,7 +818,8 @@
                         </div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Sanket Ghosh, Darothi Sarkar, Ayan
                             Chaudhuri</div>
-                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM 2024</a></div>
+                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM 2024</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -795,7 +830,8 @@
                         <div class="pub-title">The COVID-19 Shock: An Analysis Of Impacts And Responses Of Indian Stock
                             Market</div>
                         <div class="pub-authors">Sanket Ghosh, Sanjan Baitalik, Rajashik Datta, Darothi Sarkar</div>
-                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM 2024</a></div>
+                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM 2024</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -807,7 +843,9 @@
                         <div class="pub-authors">Rajashik Datta, Sanjan Baitalik, Sanket Ghosh, Saugata Ghosh, Swarnendu
                             Ghosh</div>
                         <div class="pub-venue">IEM-HEALS 2024</div>
-                        <div class="pub-links"><a href="https://iem-heals.smartsociety.org/wp-content/uploads/2024/11/IEM-HEALS-BOOK-final.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>
+                        <div class="pub-links"><a
+                                href="https://iem-heals.smartsociety.org/wp-content/uploads/2024/11/IEM-HEALS-BOOK-final.pdf"
+                                target="_blank"><i class="fa-solid fa-file-pdf"></i>
                                 PDF</a></div>
                     </div>
                 </div>
@@ -823,7 +861,8 @@
                             Intuitionistic Hypergraph-Based Feature Selection</div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Arup Kumar Chattopadhyay, Amit Kumar
                             Das, Amlan Chakraborty</div>
-                        <div class="pub-venue"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank">Pattern Recognition</a>, 2026 (under review)</div>
+                        <div class="pub-venue"><a href="https://www.sciencedirect.com/journal/pattern-recognition"
+                                target="_blank">Pattern Recognition</a>, 2026 (under review)</div>
                     </div>
                 </div>
             </div>
@@ -835,7 +874,8 @@
                         <div class="pub-title">MiQ-MCP: Valid and Conditionally Robust Uncertainty Quantification for
                             High-Frequency Financial Time Series via Mondrian Conformalized Quantile Regression</div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Darothi Sarkar, Ayan Chaudhuri</div>
-                        <div class="pub-venue"><a href="https://link.springer.com/journal/10614" target="_blank">Computational Economics</a>, 2025 (under review)</div>
+                        <div class="pub-venue"><a href="https://link.springer.com/journal/10614"
+                                target="_blank">Computational Economics</a>, 2025 (under review)</div>
                     </div>
                 </div>
             </div>
@@ -844,7 +884,8 @@
         <!-- Projects -->
         <section id="projects">
             <div class="section-label">Projects</div>
-            <h2 class="section-title">Research Projects</h2>
+            <h2 class="section-title">Research Projects<a class="anchor-link" href="#projects"
+                    aria-label="Link to Projects section">#</a></h2>
 
             <div class="card">
                 <div class="card-title">Geodesic Optimal Transport (Transfer Geometry)</div>
@@ -854,7 +895,8 @@
                     <li>Strong correlations with zero-shot transfer (Pearson r ≈ −0.71) and low-data adaptation
                         (Spearman ρ ≈ 0.60 at 200-shot).</li>
                 </ul>
-                <div class="pub-links"><a href="https://github.com/sanjanbaitalik/geodesic-ot" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+                <div class="pub-links"><a href="https://github.com/sanjanbaitalik/geodesic-ot" target="_blank"><i
+                            class="fa-brands fa-github"></i> Code</a></div>
             </div>
 
             <div class="card">
@@ -864,7 +906,8 @@
                         training for 15k epochs.</li>
                     <li>Reproduced classic grokking (99% train → 99% val) and quantified rank/LR thresholds.</li>
                 </ul>
-                <div class="pub-links"><a href="https://github.com/sanjanbaitalik/grokking" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+                <div class="pub-links"><a href="https://github.com/sanjanbaitalik/grokking" target="_blank"><i
+                            class="fa-brands fa-github"></i> Code</a></div>
             </div>
 
             <div class="card">
@@ -875,14 +918,16 @@
                     <li>Reduced regret proxy vs. AdaGrad by 18.4% (small drift) and 19.8% (medium drift); outperformed
                         tuned OGD by 23.7–63.8%.</li>
                 </ul>
-                <div class="pub-links"><a href="https://github.com/rajashikdatta/OnlineLearning" target="_blank"><i class="fa-brands fa-github"></i> Code</a></div>
+                <div class="pub-links"><a href="https://github.com/rajashikdatta/OnlineLearning" target="_blank"><i
+                            class="fa-brands fa-github"></i> Code</a></div>
             </div>
         </section>
 
         <!-- Skills -->
         <section id="skills">
             <div class="section-label">Skills</div>
-            <h2 class="section-title">Technical Toolkit</h2>
+            <h2 class="section-title">Technical Toolkit<a class="anchor-link" href="#skills"
+                    aria-label="Link to Skills section">#</a></h2>
             <div class="skills-grid">
                 <div class="skill-group">
                     <h4>Programming</h4>
@@ -922,7 +967,8 @@
         <!-- Contact -->
         <section id="contact">
             <div class="section-label">Contact</div>
-            <h2 class="section-title">Get in Touch</h2>
+            <h2 class="section-title">Get in Touch<a class="anchor-link" href="#contact"
+                    aria-label="Link to Contact section">#</a></h2>
             <p class="about-text">I'm always open to research collaborations and discussions. Feel free to reach out!
             </p>
             <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.8rem;">
