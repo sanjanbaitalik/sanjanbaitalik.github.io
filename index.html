@@ -302,6 +302,10 @@
             padding: 1.2rem 1.5rem;
         }
 
+        #publications {
+            counter-reset: pub-counter;
+        }
+
         .pub-number {
             display: inline-block;
             min-width: 24px;
@@ -315,6 +319,11 @@
             font-weight: 600;
             margin-right: .6rem;
             flex-shrink: 0;
+            counter-increment: pub-counter;
+        }
+
+        .pub-number::before {
+            content: counter(pub-counter);
         }
 
         .pub-title {
@@ -744,7 +753,7 @@
             <div class="pub-section-label">Published / Accepted</div>
             
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">1</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Garden Path Recovery in Causal and Masked Language Models</div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta
@@ -760,7 +769,7 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">2</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Confidence as a Tie-Breaker: Reassessing Multilingual Hedging Bias in LLM-as-a-Judge Evaluation</div>
                         <div class="pub-authors">Rajashik Datta, Sanjan Baitalik
@@ -776,7 +785,7 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">3</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">ReproPheno and ReproPhenoNet: A Large-Scale Multimodal Benchmark Dataset
                             and Deep Learning Framework for Reproductive-Stage Plant Phenotyping</div>
@@ -793,7 +802,7 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">4</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">PlantPhenoLM: Phenotype-Genotype Mapping Inference with Multi-Turn LLM
                             Reasoning and Selective Prediction</div>
@@ -810,7 +819,7 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">5</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Conversation as Belief Revision: GreedySAT Revision for Global Logical
                             Consistency in Multi-Turn LLM Dialogues</div>
@@ -827,7 +836,7 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">6</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Fuzzy Hypergraph Feature Association Map for High-Dimensional Feature
                             Selection in Agriculture and Remote Sensing</div>
@@ -843,7 +852,7 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">7</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Enhancing Interpretability Through Clustering, Explainable AI, and
                             Narrative Visualization</div>
@@ -857,37 +866,52 @@
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">8</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
+                    <div>
+                        <div class="pub-title">Explanation-First Agentic Forecaster for Stock Market
+                        </div>
+                        <div class="pub-authors">Sanket Ghosh, Sanjan Baitalik, Rajashik Datta, Romit Mukherjee, Darothi Sarkar, Ayan Chaudhuri</div>
+                        <div class="pub-venue"><a href="https://iementech.iem.edu.in/" target="_blank">IEMENTech</a>, 2026
+                        </div>
+                        <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/11434302/" target="_blank"><i
+                                    class="fa-solid fa-file-pdf"></i>
+                                Paper Link</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card pub-item">
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Machine Learning-Driven Insights For Stock Market Analysis And Trading
                         </div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Sanket Ghosh, Darothi Sarkar, Ayan
                             Chaudhuri</div>
-                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM 2024</a>
+                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM</a>, 2024
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">9</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">The COVID-19 Shock: An Analysis Of Impacts And Responses Of Indian Stock
                             Market</div>
                         <div class="pub-authors">Sanket Ghosh, Sanjan Baitalik, Rajashik Datta, Darothi Sarkar</div>
-                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM 2024</a>
+                        <div class="pub-venue"><a href="https://irtm.smartsociety.org/" target="_blank">IRTM</a>, 2024
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="card pub-item">
-                <div style="display:flex;align-items:start;"><span class="pub-number">10</span>
+                <div style="display:flex;align-items:start;"><span class="pub-number"></span>
                     <div>
                         <div class="pub-title">Is Indian Financial Market Ready for Pandemics?</div>
                         <div class="pub-authors">Rajashik Datta, Sanjan Baitalik, Sanket Ghosh, Saugata Ghosh, Swarnendu
                             Ghosh</div>
-                        <div class="pub-venue">IEM-HEALS 2024</div>
+                        <div class="pub-venue"><a href = "https://iem-heals.smartsociety.org/" target="_blank">IEM-HEALS</a>, 2024</div>
                         <div class="pub-links"><a
                                 href="https://iem-heals.smartsociety.org/wp-content/uploads/2024/11/IEM-HEALS-BOOK-final.pdf"
                                 target="_blank"><i class="fa-solid fa-file-pdf"></i>
@@ -900,10 +924,9 @@
 
             <div class="card pub-item">
                 <div style="display:flex;align-items:start;"><span class="pub-number"
-                        style="background:#f59e0b;">11</span>
+                        style="background:#f59e0b;"></span>
                     <div>
-                        <div class="pub-title">Greedy Optimization with Provable Guarantees for Non-Uniform
-                            Intuitionistic Hypergraph-Based Feature Selection</div>
+                        <div class="pub-title">From Graphs to Hypergraphs: Submodular Coverage-Based Feature Selection on Intuitionistic Fuzzy Hypergraphs (SIFHFAM)</div>
                         <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Arup Kumar Chattopadhyay, Amit Kumar
                             Das, Amlan Chakraborty</div>
                         <div class="pub-venue"><a href="https://www.sciencedirect.com/journal/pattern-recognition"
@@ -914,11 +937,11 @@
 
             <div class="card pub-item">
                 <div style="display:flex;align-items:start;"><span class="pub-number"
-                        style="background:#f59e0b;">12</span>
+                        style="background:#f59e0b;"></span>
                     <div>
                         <div class="pub-title">MiQ-MCP: Valid and Conditionally Robust Uncertainty Quantification for
                             High-Frequency Financial Time Series via Mondrian Conformalized Quantile Regression</div>
-                        <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Darothi Sarkar, Ayan Chaudhuri</div>
+                        <div class="pub-authors">Sanjan Baitalik, Rajashik Datta, Darothi Sarkar, Ayan Chaudhuri, Alongbar Wary</div>
                         <div class="pub-venue"><a href="https://link.springer.com/journal/10614"
                                 target="_blank">Computational Economics</a>, 2025 (under review)</div>
                     </div>
